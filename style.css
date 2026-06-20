@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header{
+    background-color: rgb(60, 60, 214);
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.navigation a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left:30px ;
+    transition: 0.5s ease; 
+}
+.navigation a:hover {
+    color: rgb(51, 21, 78);
+}
+section {
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(8, 1, 22) url(image/5.png) no-repeat;
+    background-size: 40em;
+    background-position: right 250px center;
+    background-attachment: fixed;
+}
+.main h2 {
+    color: aliceblue;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(60, 60, 214);
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3 {
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(60, 60, 214);
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;    
+}
+.main-btn:hover {
+    transform: scale(1.1);
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+a img {
+    width: 35px;
+}
+
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(60, 60, 214);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: aliceblue;
+    width: 21.30em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+.card:hover {
+     transform: scale(1.1);
+}
+i img {
+    width: 120px;
+}
+.icon {
+    font-size: 8em;
+    text-align: center;
+}
+.info {
+    text-align: center;
+}
+.info h3 {
+    color: rgb(60, 60, 214);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+.projects {
+    background-color: rgb(8, 1, 22);
+}
+.projects .content {
+    margin-top: 30px;
+}
+.projects-card {
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.5s ease;
+}
+.projects-card:hover {
+     transform: scale(1.1);
+}
+.photo img {
+    width: 100%;
+}
+.projects-card:hover .photo {
+     opacity: 0.9;
+}
+.Pinfo {
+    padding: 1em;
+}
+.Pcatgo {
+    font-size: 0.8em;
+    color: black;
+}
+.Ptitel {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+
+
+.more {
+    text-decoration: none;
+    color: rgb(60, 60, 214);
+
+}
+.more:hover {
+    color: rgb(51, 21, 78);
+}
+.conatact .icon img {
+    width: 100px;
+}
+.conatact .info h3 {
+    color: black;
+}
+.conatact .info p {
+    font-size: 1.2em;
+}
+
+
+
+.footer {
+    background-color: black;
+    color: aliceblue;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title {
+    font-weight: 1.3em;
+    font-weight: 600;
+}
+.footer-title span {
+    color: rgb(60, 60, 214);
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-weight: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2 {
+        font-size: 1em;
+    }
+    .main h3 {
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        background: rgb(8, 1, 22);
+    }
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main h2{
+        font-size: 0.8em;
+    }
+    .main h3{
+        font-size: 1.4em;
+    }
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
